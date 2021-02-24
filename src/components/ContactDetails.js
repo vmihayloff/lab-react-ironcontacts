@@ -3,16 +3,13 @@ import React from "react";
 function ContactDetails(props) {
   return (
     <div>
-      {props.pictureUrl} {props.name} {props.popularity}
+      <img src={props.picture} width= "100px"/> {props.name} {props.popularity}
       <button
-        onClick={() => {
-          props.onDelete(props.id);
-        }}
-      >
+        onClick={() => { props.onDelete(props.id);}}>
         Delete
       </button>
     </div>
   );
 }
 
-export default ContactDetails;
+export default ContactDetails

@@ -58,7 +58,7 @@ class Contacts extends Component {
               key={index}
               picture={singleContact.pictureUrl}
               name={singleContact.name}
-              popularity={singleContact.popularity}
+              popularity={singleContact.popularity.toFixed(2)}
               id={singleContact.id}
               onDelete={this.handleDelete}
             />
